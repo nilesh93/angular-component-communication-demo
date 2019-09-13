@@ -1,0 +1,28 @@
+<h2> Parent - Child Communication </h2>
+<hr> <br>
+<h4> Parent Component </h4>
+<br>
+
+
+<div class="form-group">
+    <label class="col-form-label col-form-label-lg" for="inputLarge">Parent Input</label>
+    <input class="form-control form-control-lg" [(ngModel)]="textBoxValue" type="text" placeholder="enter any value"
+        id="inputLarge">
+</div>
+<br>
+<div class="form-group">
+    <h6> Text Box Value Taken from Child: </h6>
+    <p>{{textBoxValueFromChild}}</p>
+</div>
+
+<br>
+<div class="form-group">
+    <h4> Call function of Child by Button Click: <button type="button" class="btn btn-outline-primary"
+            (click)="child.helloAngularAlert()">Greetings From Child</button> </h4>
+
+</div>
+
+
+<hr>
+<app-child-a #child [textBoxValueFromParent]="textBoxValue" (textBoxValueEmitter)="updateTextBoxValueFromChild($event)">
+</app-child-a>

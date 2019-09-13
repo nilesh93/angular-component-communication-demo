@@ -1,0 +1,12 @@
+<h4> Sibling B Component </h4>
+
+
+<div class="form-group">
+    <label class="col-form-label col-form-label-lg" for="inputLarge">Message</label>
+    <input class="form-control form-control-lg" [(ngModel)]="message" type="text" placeholder="enter any message"
+        id="inputLarge">
+</div>
+<button type="button" class="btn btn-outline-primary" (click)="sendMessage()">Send Message to A</button> 
+
+<br> <br>
+<h5> Sibling A says: {{recievedMessege}} </h5>

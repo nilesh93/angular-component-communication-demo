@@ -1,0 +1,24 @@
+<br>
+<h4>Child Component</h4>
+<br>
+<br>
+
+<h6> Text Box Value Taken from Parent: </h6>
+<p>{{textBoxValueFromParent}}</p>
+
+
+<br>
+<br>
+<div class="form-group">
+
+
+    <div class="form-group">
+        <label class="col-form-label col-form-label-lg" for="inputLarge">Child Input</label>
+        <input class="form-control form-control-lg" (keyup)="textBoxChange()" [(ngModel)]="textBoxValue" type="text" placeholder="enter any value"
+            id="inputLarge">
+    </div>
+    <br>
+    <hr>
+
+
+</div>
