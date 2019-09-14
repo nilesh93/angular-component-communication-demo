@@ -1,7 +1,7 @@
 ### STAGE 1: Build ###
 
 # label first stage as 'builder'
-FROM node:8-alpine as builder
+FROM node:10-alpine as builder
 
 COPY package.json package-lock.json ./
 
