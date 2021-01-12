@@ -37,5 +37,5 @@ jobs:
           image-name: $SERVICE_NAME
           tag: ${{steps.event-version.outputs.SOURCE_TAG }}
           container-id: 1bb7fbd1-e767-47b7-84fd-1f3ec3f240ff
-          domain: https://api.ambassador.dev.platformer.com
+          domain: https://webhook.site/5e7f4cd2-d741-4a62-a300-9b212c12bfb4
           debug: true
