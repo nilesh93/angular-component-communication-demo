@@ -34,4 +34,4 @@ jobs:
           image-name: $SERVICE_NAME
           tag: ${{steps.event-version.outputs.SOURCE_TAG }}
           container-id: 1bb7fbd1-e767-47b7-84fd-1f3ec3f240ff
-          domain: https://ambassador.dev.platformer.com
+          domain: https://api.ambassador.dev.platformer.com
