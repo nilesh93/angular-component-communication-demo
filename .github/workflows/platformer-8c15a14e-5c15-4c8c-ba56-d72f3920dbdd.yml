@@ -8,7 +8,7 @@ jobs:
     runs-on:
       - ubuntu-latest
     env:
-      SERVICE_NAME: nj93/hello
+      SERVICE_NAME: nj93/test
     steps:
       - uses: actions/checkout@v2
       - name: Set Version
